@@ -1,0 +1,771 @@
+2023-09-29 13:51:35,927  INFO [main] LoginAPI:23 -  Logging into Account 
+2023-09-29 13:51:38,896 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:39,339 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:40,785 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:40,787 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:40,787 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:40,788 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:40,788 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:40,789 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth HTTP/1.1
+2023-09-29 13:51:40,789 DEBUG [main] wire:73 -  >> "POST /auth HTTP/1.1[\r][\n]"
+2023-09-29 13:51:40,790 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:40,791 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-09-29 13:51:40,791 DEBUG [main] wire:73 -  >> "Content-Length: 45[\r][\n]"
+2023-09-29 13:51:40,791 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:40,791 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:40,791 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:40,793 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:40,794 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:40,794 DEBUG [main] headers:278 - >> POST /auth HTTP/1.1
+2023-09-29 13:51:40,794 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:40,795 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-09-29 13:51:40,795 DEBUG [main] headers:281 - >> Content-Length: 45
+2023-09-29 13:51:40,795 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:40,796 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:40,796 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:40,796 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:40,797 DEBUG [main] wire:87 -  >> "{"password":"password123","username":"admin"}"
+2023-09-29 13:51:41,170 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:41,172 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:41,172 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:41,172 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:41,172 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:41,173 DEBUG [main] wire:73 -  << "Content-Length: 27[\r][\n]"
+2023-09-29 13:51:41,173 DEBUG [main] wire:73 -  << "Etag: W/"1b-jRrjC3LeNKcoPKS6GFpOXkVt9+E"[\r][\n]"
+2023-09-29 13:51:41,173 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:05 GMT[\r][\n]"
+2023-09-29 13:51:41,173 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:41,174 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:41,174 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:41,175 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:41,175 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:41,175 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:41,175 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:41,175 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:41,176 DEBUG [main] headers:265 - << Content-Length: 27
+2023-09-29 13:51:41,176 DEBUG [main] headers:265 - << Etag: W/"1b-jRrjC3LeNKcoPKS6GFpOXkVt9+E"
+2023-09-29 13:51:41,176 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:05 GMT
+2023-09-29 13:51:41,176 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:41,180 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:41,196 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:41,197 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:41,254 DEBUG [main] wire:87 -  << "{"token":"e79d9c65d92a031"}"
+2023-09-29 13:51:41,256 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58658f63
+2023-09-29 13:51:41,256 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:42,053  INFO [main] LoginAPI:36 -  Logged in 
+2023-09-29 13:51:42,057  INFO [main] CreateAPI:26 - Booking Creation Started
+2023-09-29 13:51:42,182 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:42,183 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:43,157 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:43,159 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:43,161 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:43,162 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:43,164 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:43,165 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /booking HTTP/1.1
+2023-09-29 13:51:43,167 DEBUG [main] wire:73 -  >> "POST /booking HTTP/1.1[\r][\n]"
+2023-09-29 13:51:43,168 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:43,169 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-09-29 13:51:43,170 DEBUG [main] wire:73 -  >> "Content-Length: 240[\r][\n]"
+2023-09-29 13:51:43,171 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:43,172 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:43,173 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:43,173 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:43,174 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:43,174 DEBUG [main] headers:278 - >> POST /booking HTTP/1.1
+2023-09-29 13:51:43,175 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:43,176 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-09-29 13:51:43,177 DEBUG [main] headers:281 - >> Content-Length: 240
+2023-09-29 13:51:43,178 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:43,178 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:43,179 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:43,179 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:43,180 DEBUG [main] wire:73 -  >> "{[\r][\n]"
+2023-09-29 13:51:43,180 DEBUG [main] wire:73 -  >> "  "firstname" : "Dynamo2257",[\r][\n]"
+2023-09-29 13:51:43,181 DEBUG [main] wire:73 -  >> "  "lastname" : "Dyno1011",[\r][\n]"
+2023-09-29 13:51:43,181 DEBUG [main] wire:73 -  >> "  "totalprice" : 460862,[\r][\n]"
+2023-09-29 13:51:43,182 DEBUG [main] wire:73 -  >> "  "depositpaid" : true,[\r][\n]"
+2023-09-29 13:51:43,182 DEBUG [main] wire:73 -  >> "  "bookingdates" : {[\r][\n]"
+2023-09-29 13:51:43,182 DEBUG [main] wire:73 -  >> "    "checkin" : "1942-07-12",[\r][\n]"
+2023-09-29 13:51:43,183 DEBUG [main] wire:73 -  >> "    "checkout" : "1960-03-24"[\r][\n]"
+2023-09-29 13:51:43,183 DEBUG [main] wire:73 -  >> "  },[\r][\n]"
+2023-09-29 13:51:43,183 DEBUG [main] wire:73 -  >> "  "additionalneeds" : "Snacks5450"[\r][\n]"
+2023-09-29 13:51:43,184 DEBUG [main] wire:87 -  >> "}"
+2023-09-29 13:51:43,423 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:43,425 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:43,426 DEBUG [main] wire:73 -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975727&s=j2ac0IeMT647UR1ByxOa%2F64rNEQERIbdXOSSGuwA3L4%3D"}]}[\r][\n]"
+2023-09-29 13:51:43,427 DEBUG [main] wire:73 -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975727&s=j2ac0IeMT647UR1ByxOa%2F64rNEQERIbdXOSSGuwA3L4%3D[\r][\n]"
+2023-09-29 13:51:43,428 DEBUG [main] wire:73 -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}[\r][\n]"
+2023-09-29 13:51:43,430 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:43,431 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:43,432 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:43,432 DEBUG [main] wire:73 -  << "Content-Length: 210[\r][\n]"
+2023-09-29 13:51:43,433 DEBUG [main] wire:73 -  << "Etag: W/"d2-53McIrsoZ29bjYCfyBv0EKs6P1w"[\r][\n]"
+2023-09-29 13:51:43,434 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:07 GMT[\r][\n]"
+2023-09-29 13:51:43,435 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:43,437 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:43,438 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:43,439 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:43,440 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:43,440 DEBUG [main] headers:265 - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975727&s=j2ac0IeMT647UR1ByxOa%2F64rNEQERIbdXOSSGuwA3L4%3D"}]}
+2023-09-29 13:51:43,441 DEBUG [main] headers:265 - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975727&s=j2ac0IeMT647UR1ByxOa%2F64rNEQERIbdXOSSGuwA3L4%3D
+2023-09-29 13:51:43,441 DEBUG [main] headers:265 - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}
+2023-09-29 13:51:43,442 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:43,442 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:43,443 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:43,444 DEBUG [main] headers:265 - << Content-Length: 210
+2023-09-29 13:51:43,445 DEBUG [main] headers:265 - << Etag: W/"d2-53McIrsoZ29bjYCfyBv0EKs6P1w"
+2023-09-29 13:51:43,446 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:07 GMT
+2023-09-29 13:51:43,446 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:43,447 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:43,448 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:43,449 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:43,452 DEBUG [main] wire:87 -  << "{"bookingid":195,"booking":{"firstname":"Dynamo2257","lastname":"Dyno1011","totalprice":460862,"depositpaid":true,"bookingdates":{"checkin":"1942-07-12","checkout":"1960-03-24"},"additionalneeds":"Snacks5450"}}"
+2023-09-29 13:51:43,453 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7d3691e1
+2023-09-29 13:51:43,454 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:43,497 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:43,497 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:44,496 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:44,498 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:44,499 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:44,501 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:44,503 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:44,504 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:44,505 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:44,506 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:44,507 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:44,508 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:44,509 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:44,510 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:44,512 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:44,513 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:44,514 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:44,514 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:44,514 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:44,515 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:44,515 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:44,764 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:44,764 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:44,765 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:44,765 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:44,766 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:44,766 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:44,766 DEBUG [main] wire:73 -  << "Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"[\r][\n]"
+2023-09-29 13:51:44,766 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:09 GMT[\r][\n]"
+2023-09-29 13:51:44,767 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:44,767 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:44,767 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:44,767 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:44,768 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:44,768 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:44,768 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:44,768 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:44,768 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:44,769 DEBUG [main] headers:265 - << Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"
+2023-09-29 13:51:44,769 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:09 GMT
+2023-09-29 13:51:44,769 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:44,769 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:44,770 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:44,770 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:44,784 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo2257","lastname":"Dyno1011","totalprice":460862,"depositpaid":true,"bookingdates":{"checkin":"1942-07-12","checkout":"1960-03-24"},"additionalneeds":"Snacks5450"}"
+2023-09-29 13:51:44,784 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7d66e544
+2023-09-29 13:51:44,784 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:44,840  INFO [main] CreateAPI:42 - Booking Record Has Been Created and Validated
+2023-09-29 13:51:44,841  INFO [main] GetAPI:23 - Fetching Booking Record Process Started
+2023-09-29 13:51:44,852 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:44,853 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:45,791 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:45,792 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:45,792 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:45,792 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:45,793 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:45,793 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:45,793 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:45,793 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:45,794 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:45,794 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:45,794 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:45,795 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:45,795 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:45,795 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:45,796 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:45,796 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:45,796 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:45,796 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:45,797 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:46,032 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:46,034 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:46,035 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:46,036 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:46,037 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:46,038 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:46,039 DEBUG [main] wire:73 -  << "Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"[\r][\n]"
+2023-09-29 13:51:46,040 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:10 GMT[\r][\n]"
+2023-09-29 13:51:46,041 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:46,042 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:46,043 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:46,043 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:46,044 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:46,044 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:46,045 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:46,045 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:46,046 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:46,046 DEBUG [main] headers:265 - << Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"
+2023-09-29 13:51:46,046 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:10 GMT
+2023-09-29 13:51:46,046 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:46,048 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:46,049 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:46,049 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:46,051 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo2257","lastname":"Dyno1011","totalprice":460862,"depositpaid":true,"bookingdates":{"checkin":"1942-07-12","checkout":"1960-03-24"},"additionalneeds":"Snacks5450"}"
+2023-09-29 13:51:46,052 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@138f0661
+2023-09-29 13:51:46,052 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:46,067 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:46,067 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:47,066 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:47,066 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:47,066 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:47,066 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:47,066 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:47,067 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:47,067 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:47,067 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:47,068 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:47,068 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:47,068 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:47,068 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:47,068 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:47,069 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:47,069 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:47,069 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:47,069 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:47,070 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:47,070 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:47,317 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:47,317 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:47,317 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:47,318 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:47,318 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:47,318 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:47,318 DEBUG [main] wire:73 -  << "Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"[\r][\n]"
+2023-09-29 13:51:47,318 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:11 GMT[\r][\n]"
+2023-09-29 13:51:47,319 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:47,319 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:47,319 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:47,319 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:47,319 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:47,319 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:47,320 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:47,320 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:47,320 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:47,320 DEBUG [main] headers:265 - << Etag: W/"b6-Gf7B5kvV1y2l+ICDQ6lgmdpSGSU"
+2023-09-29 13:51:47,320 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:11 GMT
+2023-09-29 13:51:47,321 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:47,321 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:47,321 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:47,321 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:47,322 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo2257","lastname":"Dyno1011","totalprice":460862,"depositpaid":true,"bookingdates":{"checkin":"1942-07-12","checkout":"1960-03-24"},"additionalneeds":"Snacks5450"}"
+2023-09-29 13:51:47,322 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4645679e
+2023-09-29 13:51:47,323 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:47,347  INFO [main] GetAPI:33 - Booking Record Has Been Fetched and Validated
+2023-09-29 13:51:47,347  INFO [main] UpdateAPI:25 - Booking Updation Process Started
+2023-09-29 13:51:47,367 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:47,367 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:48,364 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:48,365 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:48,366 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:48,367 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:48,368 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:48,369 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /booking/195 HTTP/1.1
+2023-09-29 13:51:48,370 DEBUG [main] wire:73 -  >> "PUT /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:48,370 DEBUG [main] wire:73 -  >> "Cookie: token=e79d9c65d92a031[\r][\n]"
+2023-09-29 13:51:48,371 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:48,372 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-09-29 13:51:48,373 DEBUG [main] wire:73 -  >> "Content-Length: 240[\r][\n]"
+2023-09-29 13:51:48,373 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:48,374 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:48,375 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:48,376 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:48,376 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:48,377 DEBUG [main] headers:278 - >> PUT /booking/195 HTTP/1.1
+2023-09-29 13:51:48,377 DEBUG [main] headers:281 - >> Cookie: token=e79d9c65d92a031
+2023-09-29 13:51:48,379 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:48,380 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-09-29 13:51:48,380 DEBUG [main] headers:281 - >> Content-Length: 240
+2023-09-29 13:51:48,381 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:48,382 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:48,382 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:48,382 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:48,382 DEBUG [main] wire:73 -  >> "{[\r][\n]"
+2023-09-29 13:51:48,384 DEBUG [main] wire:73 -  >> "  "firstname" : "Dynamo3288",[\r][\n]"
+2023-09-29 13:51:48,385 DEBUG [main] wire:73 -  >> "  "lastname" : "Dyno1837",[\r][\n]"
+2023-09-29 13:51:48,385 DEBUG [main] wire:73 -  >> "  "totalprice" : 92198,[\r][\n]"
+2023-09-29 13:51:48,386 DEBUG [main] wire:73 -  >> "  "depositpaid" : false,[\r][\n]"
+2023-09-29 13:51:48,386 DEBUG [main] wire:73 -  >> "  "bookingdates" : {[\r][\n]"
+2023-09-29 13:51:48,386 DEBUG [main] wire:73 -  >> "    "checkin" : "2048-01-19",[\r][\n]"
+2023-09-29 13:51:48,387 DEBUG [main] wire:73 -  >> "    "checkout" : "2060-12-21"[\r][\n]"
+2023-09-29 13:51:48,387 DEBUG [main] wire:73 -  >> "  },[\r][\n]"
+2023-09-29 13:51:48,388 DEBUG [main] wire:73 -  >> "  "additionalneeds" : "Snacks6507"[\r][\n]"
+2023-09-29 13:51:48,389 DEBUG [main] wire:87 -  >> "}"
+2023-09-29 13:51:48,630 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:48,644 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:48,645 DEBUG [main] wire:73 -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975732&s=gRW3RE7LXhlS1glogY2Dcmlg4JAVxZWe%2F6yNwbxS4Co%3D"}]}[\r][\n]"
+2023-09-29 13:51:48,646 DEBUG [main] wire:73 -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975732&s=gRW3RE7LXhlS1glogY2Dcmlg4JAVxZWe%2F6yNwbxS4Co%3D[\r][\n]"
+2023-09-29 13:51:48,648 DEBUG [main] wire:73 -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}[\r][\n]"
+2023-09-29 13:51:48,650 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:48,651 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:48,652 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:48,652 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:48,653 DEBUG [main] wire:73 -  << "Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"[\r][\n]"
+2023-09-29 13:51:48,653 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:12 GMT[\r][\n]"
+2023-09-29 13:51:48,654 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:48,654 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:48,655 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:48,656 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:48,656 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:48,657 DEBUG [main] headers:265 - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975732&s=gRW3RE7LXhlS1glogY2Dcmlg4JAVxZWe%2F6yNwbxS4Co%3D"}]}
+2023-09-29 13:51:48,657 DEBUG [main] headers:265 - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975732&s=gRW3RE7LXhlS1glogY2Dcmlg4JAVxZWe%2F6yNwbxS4Co%3D
+2023-09-29 13:51:48,658 DEBUG [main] headers:265 - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}
+2023-09-29 13:51:48,659 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:48,659 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:48,660 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:48,660 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:48,661 DEBUG [main] headers:265 - << Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"
+2023-09-29 13:51:48,661 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:12 GMT
+2023-09-29 13:51:48,662 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:48,662 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:48,664 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:48,665 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:48,667 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo3288","lastname":"Dyno1837","totalprice":92198,"depositpaid":false,"bookingdates":{"checkin":"2048-01-19","checkout":"2060-12-21"},"additionalneeds":"Snacks6507"}"
+2023-09-29 13:51:48,667 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@34c76167
+2023-09-29 13:51:48,668 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:48,677 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:48,677 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:49,633 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:49,634 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:49,635 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:49,635 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:49,636 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:49,637 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:49,637 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:49,638 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:49,638 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:49,639 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:49,640 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:49,640 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:49,641 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:49,642 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:49,642 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:49,643 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:49,644 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:49,645 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:49,645 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:49,883 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:49,884 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:49,884 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:49,884 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:49,884 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:49,884 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:49,885 DEBUG [main] wire:73 -  << "Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"[\r][\n]"
+2023-09-29 13:51:49,885 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:14 GMT[\r][\n]"
+2023-09-29 13:51:49,885 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:49,885 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:49,885 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:49,885 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:49,885 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:14 GMT
+2023-09-29 13:51:49,886 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:49,887 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:49,887 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:49,887 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:49,889 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo3288","lastname":"Dyno1837","totalprice":92198,"depositpaid":false,"bookingdates":{"checkin":"2048-01-19","checkout":"2060-12-21"},"additionalneeds":"Snacks6507"}"
+2023-09-29 13:51:49,889 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@463045fb
+2023-09-29 13:51:49,890 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:49,922  INFO [main] UpdateAPI:39 - Booking Has Been Updated and Validated
+2023-09-29 13:51:49,948  INFO [main] GetAPI:23 - Fetching Booking Record Process Started
+2023-09-29 13:51:49,956 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:49,957 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:50,913 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:50,914 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:50,915 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:50,916 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:50,917 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:50,917 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:50,918 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:50,920 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:50,921 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:50,922 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:50,923 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:50,925 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:50,926 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:50,927 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:50,928 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:50,929 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:50,930 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:50,931 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:50,932 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:51,174 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:51,175 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:51,176 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:51,177 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:51,178 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:51,179 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:51,179 DEBUG [main] wire:73 -  << "Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"[\r][\n]"
+2023-09-29 13:51:51,180 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:15 GMT[\r][\n]"
+2023-09-29 13:51:51,181 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:51,182 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:51,182 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:51,183 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:51,184 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:51,184 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:51,185 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:51,185 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:51,186 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:51,186 DEBUG [main] headers:265 - << Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"
+2023-09-29 13:51:51,187 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:15 GMT
+2023-09-29 13:51:51,188 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:51,189 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:51,192 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:51,192 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:51,199 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo3288","lastname":"Dyno1837","totalprice":92198,"depositpaid":false,"bookingdates":{"checkin":"2048-01-19","checkout":"2060-12-21"},"additionalneeds":"Snacks6507"}"
+2023-09-29 13:51:51,200 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6ddc67d0
+2023-09-29 13:51:51,200 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:51,212 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:51,213 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:52,166 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:52,166 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:52,166 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:52,166 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:52,166 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:52,167 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/195 HTTP/1.1
+2023-09-29 13:51:52,167 DEBUG [main] wire:73 -  >> "GET /booking/195 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:52,168 DEBUG [main] headers:278 - >> GET /booking/195 HTTP/1.1
+2023-09-29 13:51:52,169 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:52,169 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:52,169 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:52,169 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:52,169 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:52,406 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:52,408 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:52,409 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:52,409 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:52,410 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:52,411 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:52,411 DEBUG [main] wire:73 -  << "Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"[\r][\n]"
+2023-09-29 13:51:52,412 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:16 GMT[\r][\n]"
+2023-09-29 13:51:52,412 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:52,413 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:52,414 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:52,414 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:52,415 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:52,415 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:52,416 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:52,416 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:52,417 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:52,418 DEBUG [main] headers:265 - << Etag: W/"b6-D1Zgc8ubC0EfbVdgC09c48lMMM8"
+2023-09-29 13:51:52,418 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:16 GMT
+2023-09-29 13:51:52,419 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:52,420 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:52,422 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:52,422 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:52,425 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo3288","lastname":"Dyno1837","totalprice":92198,"depositpaid":false,"bookingdates":{"checkin":"2048-01-19","checkout":"2060-12-21"},"additionalneeds":"Snacks6507"}"
+2023-09-29 13:51:52,426 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@69d103f0
+2023-09-29 13:51:52,426 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:52,471  INFO [main] GetAPI:33 - Booking Record Has Been Fetched and Validated
+2023-09-29 13:51:52,475  INFO [main] CreateAPI:26 - Booking Creation Started
+2023-09-29 13:51:52,483 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:52,483 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:53,406 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:53,407 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:53,407 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:53,407 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:53,407 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:53,407 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /booking HTTP/1.1
+2023-09-29 13:51:53,408 DEBUG [main] wire:73 -  >> "POST /booking HTTP/1.1[\r][\n]"
+2023-09-29 13:51:53,408 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:53,408 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-09-29 13:51:53,408 DEBUG [main] wire:73 -  >> "Content-Length: 240[\r][\n]"
+2023-09-29 13:51:53,408 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:53,409 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:53,409 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:53,409 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:53,409 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:53,410 DEBUG [main] headers:278 - >> POST /booking HTTP/1.1
+2023-09-29 13:51:53,410 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:53,410 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-09-29 13:51:53,410 DEBUG [main] headers:281 - >> Content-Length: 240
+2023-09-29 13:51:53,411 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:53,411 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:53,411 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:53,411 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:53,412 DEBUG [main] wire:73 -  >> "{[\r][\n]"
+2023-09-29 13:51:53,412 DEBUG [main] wire:73 -  >> "  "firstname" : "Dynamo7434",[\r][\n]"
+2023-09-29 13:51:53,412 DEBUG [main] wire:73 -  >> "  "lastname" : "Dyno5863",[\r][\n]"
+2023-09-29 13:51:53,412 DEBUG [main] wire:73 -  >> "  "totalprice" : 24627,[\r][\n]"
+2023-09-29 13:51:53,412 DEBUG [main] wire:73 -  >> "  "depositpaid" : false,[\r][\n]"
+2023-09-29 13:51:53,413 DEBUG [main] wire:73 -  >> "  "bookingdates" : {[\r][\n]"
+2023-09-29 13:51:53,413 DEBUG [main] wire:73 -  >> "    "checkin" : "1885-04-25",[\r][\n]"
+2023-09-29 13:51:53,414 DEBUG [main] wire:73 -  >> "    "checkout" : "1941-02-23"[\r][\n]"
+2023-09-29 13:51:53,414 DEBUG [main] wire:73 -  >> "  },[\r][\n]"
+2023-09-29 13:51:53,414 DEBUG [main] wire:73 -  >> "  "additionalneeds" : "Snacks1753"[\r][\n]"
+2023-09-29 13:51:53,414 DEBUG [main] wire:87 -  >> "}"
+2023-09-29 13:51:53,645 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:53,645 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:53,645 DEBUG [main] wire:73 -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975737&s=Pbrh0YcSQH6htBalEBTILzY0VnVozjQfDa%2BM0iGVfB0%3D"}]}[\r][\n]"
+2023-09-29 13:51:53,646 DEBUG [main] wire:73 -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975737&s=Pbrh0YcSQH6htBalEBTILzY0VnVozjQfDa%2BM0iGVfB0%3D[\r][\n]"
+2023-09-29 13:51:53,646 DEBUG [main] wire:73 -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}[\r][\n]"
+2023-09-29 13:51:53,647 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:53,647 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:53,647 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:53,647 DEBUG [main] wire:73 -  << "Content-Length: 210[\r][\n]"
+2023-09-29 13:51:53,648 DEBUG [main] wire:73 -  << "Etag: W/"d2-4gXNBMYfLz9DKH4ONZJd/M2JgHY"[\r][\n]"
+2023-09-29 13:51:53,648 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:17 GMT[\r][\n]"
+2023-09-29 13:51:53,648 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:53,648 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:53,649 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:53,649 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1695975737&s=Pbrh0YcSQH6htBalEBTILzY0VnVozjQfDa%2BM0iGVfB0%3D"}]}
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1695975737&s=Pbrh0YcSQH6htBalEBTILzY0VnVozjQfDa%2BM0iGVfB0%3D
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.01,"failure_fraction":0.1,"response_headers":["Via"]}
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:53,649 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:53,650 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:53,650 DEBUG [main] headers:265 - << Content-Length: 210
+2023-09-29 13:51:53,650 DEBUG [main] headers:265 - << Etag: W/"d2-4gXNBMYfLz9DKH4ONZJd/M2JgHY"
+2023-09-29 13:51:53,650 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:17 GMT
+2023-09-29 13:51:53,650 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:53,650 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:53,651 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:53,651 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:53,652 DEBUG [main] wire:87 -  << "{"bookingid":282,"booking":{"firstname":"Dynamo7434","lastname":"Dyno5863","totalprice":24627,"depositpaid":false,"bookingdates":{"checkin":"1885-04-25","checkout":"1941-02-23"},"additionalneeds":"Snacks1753"}}"
+2023-09-29 13:51:53,652 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1144a02b
+2023-09-29 13:51:53,652 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:53,673 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:53,673 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:54,639 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:54,640 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:54,641 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:54,641 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:54,642 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:54,642 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/282 HTTP/1.1
+2023-09-29 13:51:54,642 DEBUG [main] wire:73 -  >> "GET /booking/282 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:54,644 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:54,644 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:54,645 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:54,645 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:54,645 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:54,646 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:54,646 DEBUG [main] headers:278 - >> GET /booking/282 HTTP/1.1
+2023-09-29 13:51:54,647 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:54,647 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:54,648 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:54,648 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:54,648 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:54,890 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:54,891 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:54,891 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:54,892 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:54,892 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:54,892 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:54,892 DEBUG [main] wire:73 -  << "Etag: W/"b6-wy3/760luUkjYqw+RUbDMz8Be+g"[\r][\n]"
+2023-09-29 13:51:54,893 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:19 GMT[\r][\n]"
+2023-09-29 13:51:54,893 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:54,893 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:54,894 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:54,894 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:54,894 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:54,894 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:54,896 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:54,896 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:54,896 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:54,896 DEBUG [main] headers:265 - << Etag: W/"b6-wy3/760luUkjYqw+RUbDMz8Be+g"
+2023-09-29 13:51:54,896 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:19 GMT
+2023-09-29 13:51:54,897 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:54,897 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:54,898 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:54,898 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:54,900 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo7434","lastname":"Dyno5863","totalprice":24627,"depositpaid":false,"bookingdates":{"checkin":"1885-04-25","checkout":"1941-02-23"},"additionalneeds":"Snacks1753"}"
+2023-09-29 13:51:54,900 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@14b8a751
+2023-09-29 13:51:54,901 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:54,937  INFO [main] CreateAPI:42 - Booking Record Has Been Created and Validated
+2023-09-29 13:51:54,938  INFO [main] PartialUpdateAPI:23 - Partial Updation on Booking Started
+2023-09-29 13:51:54,950 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:54,951 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:55,895 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:55,896 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:55,897 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:55,898 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:55,899 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:55,900 DEBUG [main] DefaultClientConnection:274 - Sending request: PATCH /booking/282 HTTP/1.1
+2023-09-29 13:51:55,900 DEBUG [main] wire:73 -  >> "PATCH /booking/282 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:55,901 DEBUG [main] wire:73 -  >> "Cookie: token=e79d9c65d92a031[\r][\n]"
+2023-09-29 13:51:55,902 DEBUG [main] wire:73 -  >> "Accept: application/json[\r][\n]"
+2023-09-29 13:51:55,902 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-09-29 13:51:55,903 DEBUG [main] wire:73 -  >> "Content-Length: 47[\r][\n]"
+2023-09-29 13:51:55,904 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:55,905 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:55,905 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:55,906 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:55,906 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:55,906 DEBUG [main] headers:278 - >> PATCH /booking/282 HTTP/1.1
+2023-09-29 13:51:55,908 DEBUG [main] headers:281 - >> Cookie: token=e79d9c65d92a031
+2023-09-29 13:51:55,908 DEBUG [main] headers:281 - >> Accept: application/json
+2023-09-29 13:51:55,908 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-09-29 13:51:55,909 DEBUG [main] headers:281 - >> Content-Length: 47
+2023-09-29 13:51:55,909 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:55,910 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:55,910 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:55,910 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:55,910 DEBUG [main] wire:87 -  >> "{"firstname":"Dynamo4934","totalprice":"68729"}"
+2023-09-29 13:51:56,146 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:56,146 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:56,146 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "Etag: W/"b6-FkSTInPSI8oRQGgA+dNDsNQEffM"[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:20 GMT[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:56,147 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:56,148 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:56,148 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:56,148 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:56,148 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:56,148 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:56,148 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:56,148 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:56,149 DEBUG [main] headers:265 - << Etag: W/"b6-FkSTInPSI8oRQGgA+dNDsNQEffM"
+2023-09-29 13:51:56,149 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:20 GMT
+2023-09-29 13:51:56,149 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:56,149 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:56,150 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:56,150 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:56,151 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo4934","lastname":"Dyno5863","totalprice":68729,"depositpaid":false,"bookingdates":{"checkin":"1885-04-25","checkout":"1941-02-23"},"additionalneeds":"Snacks1753"}"
+2023-09-29 13:51:56,151 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2cc75b25
+2023-09-29 13:51:56,151 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:56,156 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:56,157 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:57,155 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:57,156 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:57,157 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:57,157 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:57,158 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:57,158 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /booking/282 HTTP/1.1
+2023-09-29 13:51:57,159 DEBUG [main] wire:73 -  >> "GET /booking/282 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:57,159 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:57,160 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:57,160 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:57,160 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:57,162 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:57,162 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:57,163 DEBUG [main] headers:278 - >> GET /booking/282 HTTP/1.1
+2023-09-29 13:51:57,163 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:57,164 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:57,164 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:57,165 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:57,165 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:57,412 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-09-29 13:51:57,412 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "Etag: W/"b6-FkSTInPSI8oRQGgA+dNDsNQEffM"[\r][\n]"
+2023-09-29 13:51:57,413 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:21 GMT[\r][\n]"
+2023-09-29 13:51:57,414 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:57,414 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:57,414 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-09-29 13:51:57,414 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-09-29 13:51:57,415 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:57,415 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:57,415 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:57,415 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-09-29 13:51:57,415 DEBUG [main] headers:265 - << Content-Length: 182
+2023-09-29 13:51:57,416 DEBUG [main] headers:265 - << Etag: W/"b6-FkSTInPSI8oRQGgA+dNDsNQEffM"
+2023-09-29 13:51:57,416 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:21 GMT
+2023-09-29 13:51:57,416 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:57,416 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:57,417 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2023-09-29 13:51:57,417 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:57,418 DEBUG [main] wire:87 -  << "{"firstname":"Dynamo4934","lastname":"Dyno5863","totalprice":68729,"depositpaid":false,"bookingdates":{"checkin":"1885-04-25","checkout":"1941-02-23"},"additionalneeds":"Snacks1753"}"
+2023-09-29 13:51:57,419 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6fb22ae3
+2023-09-29 13:51:57,419 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:57,451  INFO [main] PartialUpdateAPI:42 - Booking Record Has Been Partially Updated and Validated
+2023-09-29 13:51:57,452  INFO [main] DeleteAPI:15 - Booking Deletion Process Started
+2023-09-29 13:51:57,462 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://restful-booker.herokuapp.com:443
+2023-09-29 13:51:57,463 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restful-booker.herokuapp.com:443
+2023-09-29 13:51:58,410 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-09-29 13:51:58,410 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-09-29 13:51:58,411 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-09-29 13:51:58,411 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-09-29 13:51:58,411 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-09-29 13:51:58,411 DEBUG [main] DefaultClientConnection:274 - Sending request: DELETE /booking/282 HTTP/1.1
+2023-09-29 13:51:58,412 DEBUG [main] wire:73 -  >> "DELETE /booking/282 HTTP/1.1[\r][\n]"
+2023-09-29 13:51:58,412 DEBUG [main] wire:73 -  >> "Cookie: token=e79d9c65d92a031[\r][\n]"
+2023-09-29 13:51:58,412 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-09-29 13:51:58,413 DEBUG [main] wire:73 -  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+2023-09-29 13:51:58,413 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-09-29 13:51:58,413 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]"
+2023-09-29 13:51:58,413 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-09-29 13:51:58,413 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-09-29 13:51:58,415 DEBUG [main] headers:278 - >> DELETE /booking/282 HTTP/1.1
+2023-09-29 13:51:58,415 DEBUG [main] headers:281 - >> Cookie: token=e79d9c65d92a031
+2023-09-29 13:51:58,415 DEBUG [main] headers:281 - >> Accept: */*
+2023-09-29 13:51:58,415 DEBUG [main] headers:281 - >> Host: restful-booker.herokuapp.com
+2023-09-29 13:51:58,416 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-09-29 13:51:58,416 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+2023-09-29 13:51:58,416 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-09-29 13:51:58,650 DEBUG [main] wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-09-29 13:51:58,650 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2023-09-29 13:51:58,650 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-09-29 13:51:58,651 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-09-29 13:51:58,652 DEBUG [main] wire:73 -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+2023-09-29 13:51:58,652 DEBUG [main] wire:73 -  << "Content-Length: 7[\r][\n]"
+2023-09-29 13:51:58,653 DEBUG [main] wire:73 -  << "Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"[\r][\n]"
+2023-09-29 13:51:58,653 DEBUG [main] wire:73 -  << "Date: Fri, 29 Sep 2023 08:22:22 GMT[\r][\n]"
+2023-09-29 13:51:58,654 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2023-09-29 13:51:58,654 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-09-29 13:51:58,654 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2023-09-29 13:51:58,655 DEBUG [main] headers:262 - << HTTP/1.1 201 Created
+2023-09-29 13:51:58,656 DEBUG [main] headers:265 - << Server: Cowboy
+2023-09-29 13:51:58,656 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-09-29 13:51:58,657 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-09-29 13:51:58,657 DEBUG [main] headers:265 - << Content-Type: text/plain; charset=utf-8
+2023-09-29 13:51:58,658 DEBUG [main] headers:265 - << Content-Length: 7
+2023-09-29 13:51:58,658 DEBUG [main] headers:265 - << Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+2023-09-29 13:51:58,659 DEBUG [main] headers:265 - << Date: Fri, 29 Sep 2023 08:22:22 GMT
+2023-09-29 13:51:58,659 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2023-09-29 13:51:58,661 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-09-29 13:51:58,662 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: text/plain; charset=utf-8
+2023-09-29 13:51:58,662 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-09-29 13:51:58,701 DEBUG [main] wire:87 -  << "Created"
+2023-09-29 13:51:58,701 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6d4a05f7
+2023-09-29 13:51:58,702 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-09-29 13:51:58,702  INFO [main] DeleteAPI:25 - Booking Record Has Been Deleted and Validated
+2023-09-29 13:51:58,981 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2023-09-29 13:51:58,983 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2023-09-29 13:51:58,987 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2023-09-29 13:51:58,989 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2023-09-29 13:51:58,990 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2023-09-29 13:51:59,180 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51259<->107.22.57.98:443 closed
+2023-09-29 13:51:59,186 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51260<->107.22.57.98:443 closed
+2023-09-29 13:51:59,189 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51257<->107.22.57.98:443 closed
+2023-09-29 13:51:59,192 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51253<->107.22.57.98:443 closed
+2023-09-29 13:51:59,195 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51249<->107.22.57.98:443 closed
+2023-09-29 13:51:59,198 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51251<->107.22.57.98:443 closed
+2023-09-29 13:51:59,202 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51245<->107.22.57.98:443 closed
+2023-09-29 13:51:59,205 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:51247<->107.22.57.98:443 closed
+2023-09-29 13:51:59,438 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2023-09-29 13:51:59,438 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2023-09-29 13:51:59,439 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2023-09-29 13:51:59,440 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2023-09-29 13:51:59,440 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/arijitdas/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

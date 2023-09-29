@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-29T08:21:35Z" name="Suite" finished-at="2023-09-29T08:21:58Z" duration-ms="22805">
+    <groups>
+    </groups>
+    <test started-at="2023-09-29T08:21:35Z" name="Test1" finished-at="2023-09-29T08:21:49Z" duration-ms="14025">
+      <class name="CRUD_Operations.GetAPI">
+        <test-method signature="getBookingRecord()[pri:0, instance:CRUD_Operations.GetAPI@24ba9639]" started-at="2023-09-29T13:51:44Z" name="getBookingRecord" finished-at="2023-09-29T13:51:47Z" duration-ms="2507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingRecord -->
+      </class> <!-- CRUD_Operations.GetAPI -->
+      <class name="CRUD_Operations.LoginAPI">
+        <test-method signature="login()[pri:0, instance:CRUD_Operations.LoginAPI@64c63c79]" started-at="2023-09-29T13:51:35Z" name="login" finished-at="2023-09-29T13:51:42Z" duration-ms="6136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- CRUD_Operations.LoginAPI -->
+      <class name="CRUD_Operations.UpdateAPI">
+        <test-method signature="updateBookingRecord()[pri:0, instance:CRUD_Operations.UpdateAPI@38aa816f]" started-at="2023-09-29T13:51:47Z" name="updateBookingRecord" finished-at="2023-09-29T13:51:49Z" duration-ms="2575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookingRecord -->
+      </class> <!-- CRUD_Operations.UpdateAPI -->
+      <class name="CRUD_Operations.CreateAPI">
+        <test-method signature="createBooking()[pri:0, instance:CRUD_Operations.CreateAPI@2f62ea70]" started-at="2023-09-29T13:51:42Z" name="createBooking" finished-at="2023-09-29T13:51:44Z" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+      </class> <!-- CRUD_Operations.CreateAPI -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-09-29T08:21:49Z" name="Test2" finished-at="2023-09-29T08:21:52Z" duration-ms="2524">
+      <class name="CRUD_Operations.GetAPI">
+        <test-method signature="getBookingRecord()[pri:0, instance:CRUD_Operations.GetAPI@2766ca9d]" started-at="2023-09-29T13:51:49Z" name="getBookingRecord" finished-at="2023-09-29T13:51:52Z" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingRecord -->
+      </class> <!-- CRUD_Operations.GetAPI -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-09-29T08:21:52Z" name="Test3" finished-at="2023-09-29T08:21:58Z" duration-ms="6227">
+      <class name="CRUD_Operations.CreateAPI">
+        <test-method signature="createBooking()[pri:0, instance:CRUD_Operations.CreateAPI@1c481ff2]" started-at="2023-09-29T13:51:52Z" name="createBooking" finished-at="2023-09-29T13:51:54Z" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+      </class> <!-- CRUD_Operations.CreateAPI -->
+      <class name="CRUD_Operations.PartialUpdateAPI">
+        <test-method signature="partialUpdate_BookingRecord()[pri:0, instance:CRUD_Operations.PartialUpdateAPI@72437d8d]" started-at="2023-09-29T13:51:54Z" name="partialUpdate_BookingRecord" finished-at="2023-09-29T13:51:57Z" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partialUpdate_BookingRecord -->
+      </class> <!-- CRUD_Operations.PartialUpdateAPI -->
+      <class name="CRUD_Operations.DeleteAPI">
+        <test-method signature="deleteBookingRecord()[pri:0, instance:CRUD_Operations.DeleteAPI@1b955cac]" started-at="2023-09-29T13:51:57Z" name="deleteBookingRecord" finished-at="2023-09-29T13:51:58Z" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBookingRecord -->
+      </class> <!-- CRUD_Operations.DeleteAPI -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
