@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checking ENV Is Set ') {
+            steps {
+                build quietPeriod: 1, job: 'ForTest'
+            }
+        }
+        
+        stage('Mailer') {
+            steps {
+                build quietPeriod: 2, job: 'Mailer'
+            }
+        }
+        
+        stage('Trigger-API') {
+            steps {
+                build quietPeriod: 2, job: 'Practise_API'
+            }
+        }
+        
+        stage('Release') {
+            steps {
+                echo 'Release'
+            }
+        }
+    }
+}
