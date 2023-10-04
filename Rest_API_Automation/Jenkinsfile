@@ -22,7 +22,7 @@ pipeline {
         
         stage('Release') {
             steps {
-                echo 'Release'
+                echo 'Release Done'
             }
         }
     }
