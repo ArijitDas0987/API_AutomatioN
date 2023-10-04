@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage (Checking Maven ENV Is Set ') {
+        stage ('Checking Maven ENV Is Set ') {
             steps {
                 build quietPeriod: 1, job: 'FirstJob'
             }
