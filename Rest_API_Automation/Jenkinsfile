@@ -2,27 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('Checking ENV Is Set ') {
+        stage (Checking Maven ENV Is Set ') {
             steps {
-                build quietPeriod: 1, job: 'ForTest'
+                build quietPeriod: 1, job: 'FirstJob'
             }
         }
         
-        stage('Mailer') {
-            steps {
-                build quietPeriod: 2, job: 'Mailer'
-            }
-        }
-        
-        stage('Trigger-API') {
+        stage('Trigger_Automation_API_Framework') {
             steps {
                 build quietPeriod: 2, job: 'Practise_API'
             }
         }
         
-        stage('Release') {
+        stage('Release Messege') {
             steps {
-                echo 'Release Done Successfully'
+                build quietPeriod: 2, job: 'Release_Job'
             }
         }
     }
