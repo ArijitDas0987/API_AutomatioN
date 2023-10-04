@@ -10,7 +10,7 @@ pipeline {
         
         stage('Trigger_Automation_API_Framework') {
             steps {
-                build quietPeriod: 2, job: 'Practise_API'
+                build quietPeriod: 2, job: 'API_Automation'
             }
         }
         
